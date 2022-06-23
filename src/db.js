@@ -17,6 +17,8 @@ const firebaseConfig = {
   measurementId: 'G-LMXJK4M89T',
 };
 
+console.log(process.env.API_KEY);
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
