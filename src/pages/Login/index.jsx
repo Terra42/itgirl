@@ -6,9 +6,7 @@ import { doc, getDoc } from 'firebase/firestore';
 const Login = ({ onLogin }) => {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
-
   const [loginInfo, setLoginInfo] = useState(null);
-  // let loginInfo = {};
 
   useEffect(() => {
     const usersRef = doc(db, 'users', 'admin');

@@ -13,17 +13,18 @@ const UserView = ({ onLogin }) => {
   const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState(null);
 
-  const newQuery = query(collection(db, 'posts'));
-
   useEffect(() => {
+    const newQuery = query(collection(db, 'posts'));
+
     return onSnapshot(newQuery, (querySnapshot) => {
+      console.log('snapshot');
       setPosts(
         querySnapshot.docs.map((dokument) => {
           return { ...dokument.data(), id: dokument.id };
         }),
       );
     });
-  }, [newQuery]);
+  }, []);
 
   useEffect(() => {
     setNewPost(posts[0]);

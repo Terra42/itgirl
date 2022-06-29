@@ -45,24 +45,11 @@ const Article = () => {
             {article.content.map((line, index) => (
               <Content line={line} key={index} />
             ))}
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              rerum nisi ipsum, quae iste nesciunt assumenda fugiat totam
-              suscipit tempora voluptatem saepe sunt aut autem! Expedita, modi
-              ab. Libero, voluptas. Commodi hic cumque ex eos, iste veniam?
-              Cumque doloribus blanditiis doloremque omnis deleniti dolor
-              ratione non animi id nihil, natus placeat quasi ex sint illum.
-              Unde qui recusandae eius sit! Architecto tempore blanditiis nihil
-              vitae distinctio nam illum nemo odio magni necessitatibus labore
-              amet fuga ducimus culpa dolorum exercitationem dolores, tempora
-              fugiat suscipit, reiciendis unde? Excepturi quas deserunt nam
-              vitae.
-            </p>
           </div>
-          <div className="article-footer">
+          {/*           <div className="article-footer">
             <p className="article-views">{article.views} views</p>
             <p className="article-comments">{article.comments} comments</p>
-          </div>
+          </div> */}
         </div>
       ) : null}
     </article>

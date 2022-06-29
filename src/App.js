@@ -9,6 +9,7 @@ function App() {
 
   const handleLogin = (loggedIn) => {
     setLoggedIn(loggedIn);
+    localStorage.setItem('loggedIn', loggedIn);
   };
 
   const handleLogOut = () => {

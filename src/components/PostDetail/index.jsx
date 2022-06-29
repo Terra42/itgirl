@@ -41,11 +41,12 @@ const PostDetail = ({ post }) => {
             <p className="post-subheading">{subheading}</p>
           </Link>
         </div>
+        {/*
         <div className="post-divider"></div>
-        <div className="post-info">
+                <div className="post-info">
           <p className="post-views">{views} views</p>
           <p className="post-comments">{comments} comments</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
