@@ -17,7 +17,6 @@ const UserView = ({ onLogin }) => {
     const newQuery = query(collection(db, 'posts'));
 
     return onSnapshot(newQuery, (querySnapshot) => {
-      console.log('snapshot');
       setPosts(
         querySnapshot.docs.map((dokument) => {
           return { ...dokument.data(), id: dokument.id };
