@@ -43,7 +43,7 @@ const PostEditor = () => {
                 value="h2"
                 onChange={(e) => setType(e.target.value)}
               />
-              <label htmlFor="h2">Hlavní nadpis</label>
+              <label htmlFor="h2">Main title</label>
             </div>
             <div className="radio-input">
               <input
@@ -53,7 +53,7 @@ const PostEditor = () => {
                 value="h3"
                 onChange={(e) => setType(e.target.value)}
               />
-              <label htmlFor="h3">Menší nadpis</label>
+              <label htmlFor="h3">Smaller title</label>
             </div>
             <div className="radio-input">
               <input
@@ -64,7 +64,7 @@ const PostEditor = () => {
                 onChange={(e) => setType(e.target.value)}
                 checked
               />
-              <label htmlFor="p">Normální text</label>
+              <label htmlFor="p">Standard text</label>
             </div>
             <div className="text">
               <h4>Here comes your text:</h4>
