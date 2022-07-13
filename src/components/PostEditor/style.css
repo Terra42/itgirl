@@ -13,8 +13,16 @@
   width: 30rem;
 }
 
+.post-editor--inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .radio-input {
   margin-bottom: 0.5rem;
+  display: flex;
+  width: 10rem;
 }
 
 .radio-input input {
@@ -22,7 +30,7 @@
 }
 
 .post-editor--inputs textarea {
-  width: 100%;
+  width: 24rem;
 }
 
 .post-editor h4 {
