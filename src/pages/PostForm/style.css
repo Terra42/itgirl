@@ -1,85 +1,47 @@
-.preview-article {
-  display: none;
-}
-
-.post-form button {
-  background-color: black;
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border: 2px solid black;
-  border-radius: 10px;
-}
-
-.logout {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
-.post-form button:hover {
-  background-color: white;
-  color: black;
-  font-weight: 700;
-}
-
-.post-form {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.post-form form {
-  width: 60%;
-}
-
-.post-form--info,
-.post-form--content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.post-form label {
-  font-size: 1rem;
-  margin: 1rem 0;
-}
-
-.post-form input,
-.post-form textarea {
-  width: 100%;
-}
-
-.post-form input,
-.post-form select {
+input,
+textarea {
   padding: 0.5rem 1rem;
   border-radius: 10px;
   border: 1px solid black;
 }
 
-.post-form textarea {
+textarea {
   height: 20vh;
 }
 
-.post-form--controls {
-  margin-bottom: 3rem;
-  width: 100%;
+h3 {
+  margin: 3rem 0;
+}
+
+.post-form {
+  height: calc(100vh - 6rem);
+}
+
+.post-form--steps {
+  height: 100%;
+}
+
+.next {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.previous {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.controls {
+  height: 8rem;
   display: flex;
-  justify-content: space-around;
-}
-
-.post-form .publish {
-  background-color: rgb(255, 192, 58);
-  border: none;
-  color: black;
-  font-weight: 600;
-}
-
-.post-form .publish:hover {
-  background-color: black;
-  color: white;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid black;
+  padding-top: 2rem;
 }

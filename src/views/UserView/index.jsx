@@ -1,12 +1,12 @@
-import Homepage from '../pages/Homepage';
-import Posts from '../pages/Posts';
-import Login from '../pages/Login';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Article from '../pages/Article';
+import Homepage from '../../pages/Homepage';
+import Posts from '../../pages/Posts';
+import Login from '../../pages/Login';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Article from '../../pages/Article';
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { db } from '../db';
+import { db } from '../../db';
 import { collection, onSnapshot, query } from 'firebase/firestore';
 
 const UserView = ({ onLogin }) => {

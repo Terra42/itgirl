@@ -10,8 +10,8 @@ const PostDetail = ({ post }) => {
     readTime,
     heading,
     subheading,
-    views,
-    comments,
+    // views,
+    // comments,
     id,
   } = post;
 

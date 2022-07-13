@@ -1,12 +1,12 @@
 export const getTimePosted = (date) => {
   let posted = '';
   let timeDiff = 0;
-  let currentDate = Date.now();
-  let parsedDate = Date.parse(date);
-  let diff = currentDate - parsedDate;
-  let diffInDays = diff / (24 * 60 * 60 * 1000);
-  let diffInHours = diff / (60 * 60 * 1000);
-  let diffInMinutes = diff / (60 * 1000);
+  const currentDate = Date.now();
+  const parsedDate = Date.parse(date);
+  const diff = currentDate - parsedDate;
+  const diffInDays = diff / (24 * 60 * 60 * 1000);
+  const diffInHours = diff / (60 * 60 * 1000);
+  const diffInMinutes = diff / (60 * 1000);
 
   if (diffInDays >= 1) {
     timeDiff = Math.round(diffInDays);
@@ -20,4 +20,19 @@ export const getTimePosted = (date) => {
   }
 
   return posted;
+};
+
+export const getTodayDateTime = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = padToTwoDigits(date.getMonth() + 1);
+  const day = padToTwoDigits(date.getDate());
+  const hours = padToTwoDigits(date.getHours());
+  const min = padToTwoDigits(date.getMinutes());
+
+  return `${year}-${month}-${day}T${hours}:${min}`;
+};
+
+const padToTwoDigits = (number) => {
+  return number.toString().padStart(2, '0');
 };

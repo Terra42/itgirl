@@ -1,11 +1,18 @@
 import './App.css';
 import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import UserView from './views/UserView';
-import AdminView from './views/AdminView';
+import UserView from './views/UserView/index';
+import AdminView from './views/AdminView/index';
+import { useEffect } from 'react';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem('loggedIn') === 'true') {
+      setLoggedIn(true);
+    }
+  }, []);
 
   const handleLogin = (loggedIn) => {
     setLoggedIn(loggedIn);
@@ -14,6 +21,7 @@ function App() {
 
   const handleLogOut = () => {
     setLoggedIn(false);
+    localStorage.removeItem('loggedIn');
   };
 
   return (

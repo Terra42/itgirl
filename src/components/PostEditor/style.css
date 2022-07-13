@@ -1,0 +1,50 @@
+.post-editor {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-editor--content {
+  height: 30rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.post-editor--content .container {
+  width: 30rem;
+}
+
+.radio-input {
+  margin-bottom: 0.5rem;
+}
+
+.radio-input input {
+  margin-right: 2rem;
+}
+
+.post-editor--inputs textarea {
+  width: 100%;
+}
+
+.post-editor h4 {
+  margin-bottom: 1rem;
+}
+
+.post-editor--inputs .text {
+  margin-top: 2rem;
+}
+
+.post-editor--preview {
+  height: 18rem;
+  overflow: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.post-editor--controls button {
+  margin: 0 4rem;
+}
+
+.delete {
+  background-color: darkred;
+  border: 1px solid darkred;
+}

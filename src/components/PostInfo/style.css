@@ -1,0 +1,33 @@
+.post-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.post-info--inputs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.post-info--container {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.input-field {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.input-field label {
+  width: 5rem;
+}
+
+.input-field input {
+  width: 13rem;
+}

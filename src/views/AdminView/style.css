@@ -1,0 +1,53 @@
+.admin-header {
+  min-height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: 1px solid black;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+
+.logout-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.action-btn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem 4rem;
+}
+
+.action-btn:hover {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  border: 2px solid black;
+}
+
+.step-btn {
+  background-color: rgb(255, 192, 58);
+  border: none;
+  color: black;
+}
+
+.step-btn:hover {
+  background-color: black;
+  color: rgb(255, 192, 58);
+  font-weight: 700;
+}
